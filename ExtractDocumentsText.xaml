@@ -121,13 +121,13 @@
       <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ExtractDocumentsText" sap:VirtualizedContainerService.HintSize="1005,1633" sap2010:WorkflowViewState.IdRef="Sequence_11">
+  <Sequence DisplayName="ExtractDocumentsText" sap:VirtualizedContainerService.HintSize="1338,3819" sap2010:WorkflowViewState.IdRef="Sequence_11">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Main ExtractDocumentsText Sequence" sap:VirtualizedContainerService.HintSize="678,2241" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Main ExtractDocumentsText Sequence" sap:VirtualizedContainerService.HintSize="554,3796" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="currentText" />
         <Variable x:TypeArguments="x:String" Name="pdfText" />
@@ -140,7 +140,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Assign sap2010:Annotation.AnnotationText="initializes the combined document text before reading files." DisplayName="Initialize - out_DocumentText" sap:VirtualizedContainerService.HintSize="644,146" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign sap2010:Annotation.AnnotationText="initializes the combined document text before reading files." DisplayName="Initialize - out_DocumentText" sap:VirtualizedContainerService.HintSize="520,220" sap2010:WorkflowViewState.IdRef="Assign_2">
         <Assign.To>
           <OutArgument x:TypeArguments="x:String">[out_DocumentText]</OutArgument>
         </Assign.To>
@@ -158,7 +158,7 @@ If(in_EmailBody Is Nothing, "", in_EmailBody) &amp; vbCrLf]</InArgument>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </Assign>
-      <Assign sap2010:Annotation.AnnotationText="initializes the list of files that require manual review." DisplayName="Initialize - out_UnsupportedFiles" sap:VirtualizedContainerService.HintSize="644,99" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign sap2010:Annotation.AnnotationText="initializes the list of files that require manual review." DisplayName="Initialize - out_UnsupportedFiles" sap:VirtualizedContainerService.HintSize="520,102" sap2010:WorkflowViewState.IdRef="Assign_3">
         <Assign.To>
           <OutArgument x:TypeArguments="x:String">[out_UnsupportedFiles]</OutArgument>
         </Assign.To>
@@ -173,7 +173,7 @@ If(in_EmailBody Is Nothing, "", in_EmailBody) &amp; vbCrLf]</InArgument>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </Assign>
-      <Assign sap2010:Annotation.AnnotationText="assumes successful saving unless an unsupported file is detected." DisplayName="Initialize - out_DocumentStatus" sap:VirtualizedContainerService.HintSize="644,114" sap2010:WorkflowViewState.IdRef="Assign_4">
+      <Assign sap2010:Annotation.AnnotationText="assumes successful saving unless an unsupported file is detected." DisplayName="Initialize - out_DocumentStatus" sap:VirtualizedContainerService.HintSize="520,102" sap2010:WorkflowViewState.IdRef="Assign_4">
         <Assign.To>
           <OutArgument x:TypeArguments="x:String">[out_DocumentStatus]</OutArgument>
         </Assign.To>
@@ -188,7 +188,7 @@ If(in_EmailBody Is Nothing, "", in_EmailBody) &amp; vbCrLf]</InArgument>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </Assign>
-      <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="[in_CandidateFolder]" sap:VirtualizedContainerService.HintSize="644,1717" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+      <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="[in_CandidateFolder]" sap:VirtualizedContainerService.HintSize="520,3196" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
         <ui:ForEachFileX.Body>
           <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
             <ActivityAction.Argument1>
@@ -197,14 +197,14 @@ If(in_EmailBody Is Nothing, "", in_EmailBody) &amp; vbCrLf]</InArgument>
             <ActivityAction.Argument2>
               <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
             </ActivityAction.Argument2>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="610,1427" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,2900" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Assign sap2010:Annotation.AnnotationText="determines the file type so that the correct extraction method can be selected." DisplayName="Assign - fileExtension" sap:VirtualizedContainerService.HintSize="576,156" sap2010:WorkflowViewState.IdRef="Assign_5">
+              <Assign sap2010:Annotation.AnnotationText="determines the file type so that the correct extraction method can be selected." DisplayName="Assign - fileExtension" sap:VirtualizedContainerService.HintSize="452,220" sap2010:WorkflowViewState.IdRef="Assign_5">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[fileExtension]</OutArgument>
                 </Assign.To>
@@ -217,7 +217,7 @@ If(in_EmailBody Is Nothing, "", in_EmailBody) &amp; vbCrLf]</InArgument>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Assign sap2010:Annotation.AnnotationText="groups image extensions into one common type while keeping other file extensions unchanged." DisplayName="Assign - fileTypeGroup" sap:VirtualizedContainerService.HintSize="576,157" sap2010:WorkflowViewState.IdRef="Assign_11">
+              <Assign sap2010:Annotation.AnnotationText="groups image extensions into one common type while keeping other file extensions unchanged." DisplayName="Assign - fileTypeGroup" sap:VirtualizedContainerService.HintSize="452,220" sap2010:WorkflowViewState.IdRef="Assign_11">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[fileTypeGroup]</OutArgument>
                 </Assign.To>
@@ -234,17 +234,17 @@ If(in_EmailBody Is Nothing, "", in_EmailBody) &amp; vbCrLf]</InArgument>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="576,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Processing file: &quot; &amp; CurrentFile.FullName &amp; &quot; | Extension: &quot; &amp; fileExtension &amp; &quot; | Group: &quot; &amp; fileTypeGroup]" />
-              <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[fileTypeGroup]" sap:VirtualizedContainerService.HintSize="576,881" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Processing file: &quot; &amp; CurrentFile.FullName &amp; &quot; | Extension: &quot; &amp; fileExtension &amp; &quot; | Group: &quot; &amp; fileTypeGroup]" />
+              <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[fileTypeGroup]" sap:VirtualizedContainerService.HintSize="452,2225" sap2010:WorkflowViewState.IdRef="Switch`1_1">
                 <Switch.Default>
-                  <Sequence sap2010:Annotation.AnnotationText="flags unsupported file types like .zip, .rar, .heic, .pages for manual review." DisplayName="Default" sap:VirtualizedContainerService.HintSize="486,432" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <Sequence sap2010:Annotation.AnnotationText="flags unsupported file types like .zip, .rar, .heic, .pages for manual review." DisplayName="Default" sap:VirtualizedContainerService.HintSize="450,446" sap2010:WorkflowViewState.IdRef="Sequence_6">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Assign DisplayName="Assign out_UnspportedFiles" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="Assign_9">
+                    <Assign DisplayName="Assign out_UnspportedFiles" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_9">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[out_UnsupportedFiles]</OutArgument>
                       </Assign.To>
@@ -252,7 +252,7 @@ If(in_EmailBody Is Nothing, "", in_EmailBody) &amp; vbCrLf]</InArgument>
                         <InArgument x:TypeArguments="x:String">[out_UnsupportedFiles &amp; CurrentFile.Name &amp; "; "]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Assign DisplayName="Assign out_DocumentStatus for unsupported files" sap:VirtualizedContainerService.HintSize="452,166" sap2010:WorkflowViewState.IdRef="Assign_10">
+                    <Assign DisplayName="Assign out_DocumentStatus for unsupported files" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_10">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[out_DocumentStatus]</OutArgument>
                       </Assign.To>
@@ -268,7 +268,7 @@ If(in_EmailBody Is Nothing, "", in_EmailBody) &amp; vbCrLf]</InArgument>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Sequence x:Key=".pdf" DisplayName="Case" sap:VirtualizedContainerService.HintSize="468,289" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence x:Key=".pdf" DisplayName="Case" sap:VirtualizedContainerService.HintSize="450,350" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="ocrText" />
                   </Sequence.Variables>
@@ -277,12 +277,12 @@ If(in_EmailBody Is Nothing, "", in_EmailBody) &amp; vbCrLf]</InArgument>
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:ReadPDFText PreserveFormatting="{x:Null}" ResourceFile="{x:Null}" DisplayName="Read PDF Text" FileName="[CurrentFile.FullName]" sap:VirtualizedContainerService.HintSize="434,124" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="All" Text="[pdfText]">
+                  <ui:ReadPDFText PreserveFormatting="{x:Null}" ResourceFile="{x:Null}" DisplayName="Read PDF Text" FileName="[CurrentFile.FullName]" sap:VirtualizedContainerService.HintSize="416,124" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="All" Text="[pdfText]">
                     <ui:ReadPDFText.Item>
                       <upap:ItemArgument x:TypeArguments="upr:IResource" ResourceFile="{x:Null}" FileName="[CurrentFile.FullName]" />
                     </ui:ReadPDFText.Item>
                   </ui:ReadPDFText>
-                  <Assign DisplayName="Assign - pdf Text to the out_DocumentText" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_20">
+                  <Assign DisplayName="Assign - pdf Text to the out_DocumentText" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_20">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[out_DocumentText]</OutArgument>
                     </Assign.To>
@@ -291,14 +291,14 @@ If(in_EmailBody Is Nothing, "", in_EmailBody) &amp; vbCrLf]</InArgument>
                     </Assign.Value>
                   </Assign>
                 </Sequence>
-                <Sequence x:Key=".txt" DisplayName="Case" sap:VirtualizedContainerService.HintSize="468,320" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence x:Key=".txt" DisplayName="Case" sap:VirtualizedContainerService.HintSize="450,395" sap2010:WorkflowViewState.IdRef="Sequence_5">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:ReadTextFile File="{x:Null}" Content="[currentText]" DisplayName="Read Text File" FileName="[CurrentFile.FullName]" sap:VirtualizedContainerService.HintSize="434,124" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
-                  <Assign sap2010:Annotation.AnnotationText="adds the text file content to the combined document text." DisplayName="Assign - Text file to the out_DocumentText" sap:VirtualizedContainerService.HintSize="434,136" sap2010:WorkflowViewState.IdRef="Assign_6">
+                  <ui:ReadTextFile File="{x:Null}" Content="[currentText]" DisplayName="Read Text File" FileName="[CurrentFile.FullName]" sap:VirtualizedContainerService.HintSize="416,124" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+                  <Assign sap2010:Annotation.AnnotationText="adds the text file content to the combined document text." DisplayName="Assign - Text file to the out_DocumentText" sap:VirtualizedContainerService.HintSize="416,211" sap2010:WorkflowViewState.IdRef="Assign_6">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[out_DocumentText]</OutArgument>
                     </Assign.To>
@@ -312,56 +312,40 @@ If(in_EmailBody Is Nothing, "", in_EmailBody) &amp; vbCrLf]</InArgument>
                     </sap:WorkflowViewStateService.ViewState>
                   </Assign>
                 </Sequence>
-                <Sequence x:Key=".docx" DisplayName="Case" sap:VirtualizedContainerService.HintSize="536,568" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <Sequence x:Key=".docx" DisplayName="Case" sap:VirtualizedContainerService.HintSize="450,439" sap2010:WorkflowViewState.IdRef="Sequence_9">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <p:WordApplicationScope AutoSave="False" DisplayName="Word Application Scope" FilePath="[CurrentFile.FullName]" sap:VirtualizedContainerService.HintSize="502,508" sap2010:WorkflowViewState.IdRef="WordApplicationScope_2" ReadOnly="True">
-                    <p:WordApplicationScope.Body>
-                      <ActivityAction x:TypeArguments="ui:WordDocument">
-                        <ActivityAction.Argument>
-                          <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
-                        </ActivityAction.Argument>
-                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,371" sap2010:WorkflowViewState.IdRef="Sequence_1">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <p:DocumentReadText PathResource="{x:Null}" sap2010:Annotation.AnnotationText="reads the text content from the Word document without formatting." DisplayName="Read Text from Word document " FilePath="[CurrentFile.FullName]" sap:VirtualizedContainerService.HintSize="434,164" sap2010:WorkflowViewState.IdRef="DocumentReadText_1" Text="[wordText]">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                          </p:DocumentReadText>
-                          <Assign sap2010:Annotation.AnnotationText="adds the extracted Word document text to the combined application text." DisplayName="Assign append text" sap:VirtualizedContainerService.HintSize="434,147" sap2010:WorkflowViewState.IdRef="Assign_12">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="x:String">[out_DocumentText]</OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="x:String">[out_DocumentText &amp; vbCrLf &amp; wordText]</InArgument>
-                            </Assign.Value>
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                          </Assign>
-                        </Sequence>
-                      </ActivityAction>
-                    </p:WordApplicationScope.Body>
-                  </p:WordApplicationScope>
+                  <p:DocumentReadText PathResource="{x:Null}" sap2010:Annotation.AnnotationText="reads the text content from the Word document without formatting." DisplayName="Read Text from Word document " FilePath="[CurrentFile.FullName]" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="DocumentReadText_1" Text="[wordText]">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </p:DocumentReadText>
+                  <Assign sap2010:Annotation.AnnotationText="adds the extracted Word document text to the combined application text." DisplayName="Assign append text" sap:VirtualizedContainerService.HintSize="416,211" sap2010:WorkflowViewState.IdRef="Assign_12">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[out_DocumentText]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[out_DocumentText &amp; vbCrLf &amp; wordText]</InArgument>
+                    </Assign.Value>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Assign>
                 </Sequence>
-                <Sequence x:Key="&quot;image&quot;" DisplayName="Case" sap:VirtualizedContainerService.HintSize="486,401" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                <Sequence x:Key="&quot;image&quot;" DisplayName="Case" sap:VirtualizedContainerService.HintSize="450,401" sap2010:WorkflowViewState.IdRef="Sequence_10">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign DisplayName="Assign out_UnspportedFiles" sap:VirtualizedContainerService.HintSize="452,114" sap2010:WorkflowViewState.IdRef="Assign_13">
+                  <Assign DisplayName="Assign out_UnspportedFiles" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_13">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[out_UnsupportedFiles]</OutArgument>
                     </Assign.To>
@@ -369,7 +353,7 @@ If(in_EmailBody Is Nothing, "", in_EmailBody) &amp; vbCrLf]</InArgument>
                       <InArgument x:TypeArguments="x:String">[out_UnsupportedFiles &amp; CurrentFile.Name &amp; "; "]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <Assign DisplayName="Assign out_DocumentStatus for unsupported files" sap:VirtualizedContainerService.HintSize="452,105" sap2010:WorkflowViewState.IdRef="Assign_15">
+                  <Assign DisplayName="Assign out_DocumentStatus for unsupported files" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_15">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[out_DocumentStatus]</OutArgument>
                     </Assign.To>
@@ -389,7 +373,7 @@ If(in_EmailBody Is Nothing, "", in_EmailBody) &amp; vbCrLf]</InArgument>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:ForEachFileX>
-      <ui:WriteTextFile File="{x:Null}" Output="{x:Null}" sap2010:Annotation.AnnotationText="Writes the email content and extracted attachment text to a text file." DisplayName="Write Text File" FileName="[System.IO.Path.Combine(in_CandidateFolder, &quot;ExtractedText.txt&quot;)]" sap:VirtualizedContainerService.HintSize="644,105" sap2010:WorkflowViewState.IdRef="WriteTextFile_4" Text="[If(out_DocumentText Is Nothing, &quot;&quot;, out_DocumentText)]">
+      <ui:WriteTextFile File="{x:Null}" Output="{x:Null}" sap2010:Annotation.AnnotationText="Writes the email content and extracted attachment text to a text file." DisplayName="Write Text File" FileName="[System.IO.Path.Combine(in_CandidateFolder, &quot;ExtractedText.txt&quot;)]" sap:VirtualizedContainerService.HintSize="520,93" sap2010:WorkflowViewState.IdRef="WriteTextFile_4" Text="[If(out_DocumentText Is Nothing, &quot;&quot;, out_DocumentText)]">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>

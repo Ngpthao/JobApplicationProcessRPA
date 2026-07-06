@@ -1,0 +1,12 @@
+{
+  "Version": "1.0",
+  "IncludeWorkflows": [
+    "Main.xaml",
+    "InitializeEnvironment.xaml",
+    "ClassifyEmail.xaml",
+    "CreateCandidateFolder.xaml",
+    "ExtractDocumentsText.xaml",
+    "ExtractApplicantInfo.xaml",
+    "WriteResultToExcel.xaml"
+  ]
+}
