@@ -1,0 +1,18 @@
+----- Email Subject -----
+Job Application
+
+----- Email Body -----
+Dear Hiring Team,
+
+I recently finished my Master’s degree and am currently looking for my next challenge in the tech sector. Since I've been following your company's work for a while, I wanted to reach out proactively to see if you have any open tracks that might match my background.
+
+I’ve attached my CV so you can get a quick overview of my technical stack and previous projects.
+
+If you have a matching vacancy or expect one to open up soon, I’d love to have a quick chat.
+
+Thanks for your time!
+
+Best regards,
+
+Leo Müller
+

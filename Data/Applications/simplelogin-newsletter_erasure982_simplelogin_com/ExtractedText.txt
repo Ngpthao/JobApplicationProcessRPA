@@ -1,0 +1,72 @@
+----- Email Subject -----
+Application: Working Student IT
+
+----- Email Body -----
+Dear Hiring Team,
+
+Tech infrastructure requires both precision and adaptability. As a Computer Science Master's student with real-world experience configuring Linux environments, automating deployments via Bash, and managing cloud systems, I know how to keep operations seamless.
+
+I want to scale your internal infrastructure while minimizing downtime. My resume is attached.
+
+Let's discuss how my background matches your current operational goals.
+
+Best regards,
+
+Minh Tran
+
+
+
+
+Minh Tran
+M.Sc. Computer Science Student | Working Student IT
+Motivated Computer Science graduate student with practical experience in network infrastructure, automation, and cloud
+environments. Seeking a challenging working student position to optimize internal IT operations and scale technical solu-
+tions.
+minh.tran.donated644@simplelogin.com Ó +49 4285331961 ¯ minhtran-it  minhtran-dev
+
+SKILLS
+
+Python SQL AWS Troubleshooting
+Bash Scripting Git Network Security
+Linux Admin Docker Active Directory
+
+EXPERIENCE
+Working Student - IT Infrastructure
+TechBase GmbH  Oct 2024 – Present Berlin, Germany
+Keywords: Linux, Bash, Docker, Network Monitoring
+• Automated repetitive server deployment tasks using Bash scripts, saving 5 hours of manual work weekly.
+• Managed internal user permissions and network security configurations within a hybrid active directory environment.
+
+IT Support System Administration Intern
+ComputeX Solutions  Mar 2023 – Sep 2024 Remote, Germany
+Keywords: Windows Server, Ubuntu, Tier-2 Support, Troubleshooting
+• Resolved complex Tier-2 technical hardware and software issues for over 150+ internal remote employees.
+• Configured, monitored, and maintained virtual machines and containerized staging environments.
+
+EDUCATION
+M.Sc. Computer Science
+Technical University of Berlin  2024 – Present
+• Focus: Cloud Computing & Systems Engineering
+• Current GPA: 1.4
+B.Sc. Informatics
+University of Hamburg  2021 – 2024
+• Final Grade: 1.6
+• Thesis: "Security Optimization in Container architectures"
+
+PROJECTS AND ACTIVITIES
+Automated Lab Environment
+Built a local homelab using Docker and Ansible
+University Computer Club
+Active Member, organized local CTF hacking events
+AWS Cloud Project
+Deployed a highly-available web app infrastructure
+Open Source Contributor
+Contributed infrastructure scripts to GitHub
+
+LANGUAGES
+English
+Fluent (C1)
+German
+Intermediate (B2)
+Vietnamese
+Mother tongue

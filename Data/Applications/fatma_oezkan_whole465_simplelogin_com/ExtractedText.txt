@@ -1,0 +1,76 @@
+----- Email Subject -----
+IT Project Manager
+
+----- Email Body -----
+Dear Hiring Team,
+
+delivering software projects on time takes more than just keeping a calendar. It requires unblocking development teams, managing expectations, and navigating shifting priorities under pressure.
+
+With a Bachelor’s degree in Business Informatics and practical experience driving agile sprints as an IT Project Manager, I ensure tech goals translate smoothly into business value. I am eager to bring this structured, proactive approach to your team.
+
+My resume is attached for your review. Let's find time for a quick conversation.
+
+Best regards,
+
+Fatma Özkan
+
+
+
+FATMA ÖZKAN
+IT Project Manager
+B fatma.oezkan.whole465@simplelogin.com T +49 7199925209
+m linkedin.com/in/fatma-oezkan
+
+PROFESSIONAL SUMMARY
+Certified and detail-oriented IT Project Manager with a solid academic background in Business
+Informatics. Proven track record of leading cross-functional development teams, managing soft-
+ware release cycles, and aligning technical milestones with corporate strategies. Strong expertise
+in agile methodologies, stakeholder communication, and proactive risk mitigation.
+
+WORK EXPERIENCE
+IT Project Manager 03/2023 – Present
+TechCore Systems
+Spearheaded cross-functional software development teams delivering complex, cloud-based web
+applications. Responsible for the full project lifecycle, resource allocation, and high-level stake-
+holder management. Successfully established agile workflows, increasing sprint velocity by 20
+percent and consistently delivering deployments on time and within budget parameters.
+
+Junior IT Project Manager 01/2021 – 02/2023
+Digital Solutions GmbH
+Coordinated and facilitated sprint planning sessions, daily stand-ups, and retrospectives for two
+parallel software development tracks. Tracked critical path milestones using Jira and Confluence
+while creating data-driven progress reports for executive leadership. Led successful onboarding
+initiatives for new remote engineering team members.
+
+Project Management Assistant 08/2019 – 12/2020
+InnoSpace Hub
+Supported senior project leads in creating project documentation, maintaining risk registers,
+and preparing client presentations. Monitored timeline dependencies and served as the central
+internal contact for ticket lifecycle tracking and QA coordination prior to major software releases.
+
+EDUCATION
+B.Sc. in Business Informatics 09/2016 – 07/2019
+Technical University of Munich (TUM)
+Core academic focus on IT project management, enterprise architecture, and IT governance
+systems. Deepened knowledge in agile product management frameworks. Active member of the
+university’s student-led tech consulting initiative.
+
+SKILLS & CERTIFICATIONS
+Methodologies & Tools:
+Scrum, Kanban, Waterfall
+Jira, Confluence, MS Project
+Risk Management, Budgeting
+Business Process Modeling
+Languages:
+German (Native Speaker)
+English (Full Professional Proficiency / C1)
+Turkish (Fluent)
+Certifications:
+Certified Scrum Master (CSM)SELECTED PROJECTS
+Cloud Migration Initiative (2024): Successfully coordinated the transition of a legacy CRM
+system to an AWS infrastructure, resulting in a 30 percent improvement in system uptime.
+
+E-Commerce Platform Redesign (2022): Managed the UI/UX overhaul of a high-traffic
+client portal, leading to a measurable 15 percent increase in user conversion metrics.
+
+2
